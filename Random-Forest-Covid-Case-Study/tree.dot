@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="petal length (cm) <= 2.45\ngini = 0.67\nsamples = 95\nvalue = [48, 50, 52]\nclass = virginica", fillcolor="#fcfbfe"] ;
+1 [label="gini = 0.0\nsamples = 29\nvalue = [48, 0, 0]\nclass = setosa", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="petal width (cm) <= 1.75\ngini = 0.5\nsamples = 66\nvalue = [0, 50, 52]\nclass = virginica", fillcolor="#faf7fe"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="petal length (cm) <= 4.95\ngini = 0.2\nsamples = 36\nvalue = [0, 48, 6]\nclass = versicolor", fillcolor="#52e891"] ;
+2 -> 3 ;
+4 [label="sepal length (cm) <= 4.95\ngini = 0.04\nsamples = 32\nvalue = [0, 47, 1]\nclass = versicolor", fillcolor="#3de684"] ;
+3 -> 4 ;
+5 [label="petal width (cm) <= 1.35\ngini = 0.44\nsamples = 2\nvalue = [0, 2, 1]\nclass = versicolor", fillcolor="#9cf2c0"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 1\nvalue = [0, 2, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = virginica", fillcolor="#8139e5"] ;
+5 -> 7 ;
+8 [label="gini = 0.0\nsamples = 30\nvalue = [0, 45, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+4 -> 8 ;
+9 [label="petal width (cm) <= 1.65\ngini = 0.28\nsamples = 4\nvalue = [0, 1, 5]\nclass = virginica", fillcolor="#9a61ea"] ;
+3 -> 9 ;
+10 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 5]\nclass = virginica", fillcolor="#8139e5"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+9 -> 11 ;
+12 [label="sepal length (cm) <= 5.95\ngini = 0.08\nsamples = 30\nvalue = [0, 2, 46]\nclass = virginica", fillcolor="#8642e6"] ;
+2 -> 12 ;
+13 [label="sepal width (cm) <= 3.0\ngini = 0.44\nsamples = 4\nvalue = [0, 2, 4]\nclass = virginica", fillcolor="#c09cf2"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 4]\nclass = virginica", fillcolor="#8139e5"] ;
+13 -> 14 ;
+15 [label="gini = 0.0\nsamples = 1\nvalue = [0, 2, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+13 -> 15 ;
+16 [label="gini = 0.0\nsamples = 26\nvalue = [0, 0, 42]\nclass = virginica", fillcolor="#8139e5"] ;
+12 -> 16 ;
+}
